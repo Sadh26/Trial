@@ -30,6 +30,7 @@ jobs:
         run: echo Hello, world!
   
   build2:
+    needs: build1
     runs-on: windows-latest
     steps:
      - uses: actions/checkout@v2
