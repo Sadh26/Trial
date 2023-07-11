@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Build1 error
         run: |
-          g-cli --lv-ver 2020 https://github.com/Sadh26/CI_Operations/blob/feature-gcli/Operations/Add.vi 
+          echo ${{ github.workspace }}
         shell: cmd
   
   build2:
