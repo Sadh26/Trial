@@ -32,7 +32,6 @@ jobs:
         shell: cmd
   
   build2:
-    needs: build1
     runs-on: windows-latest
     steps:
      - uses: actions/checkout@v2
