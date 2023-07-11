@@ -26,8 +26,10 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Build1 error
+        run: |
+          g-cli --lv-ver 2020 https://github.com/Sadh26/CI_Operations/blob/feature-gcli/Operations/Add.vi 
+        shell: cmd
   
   build2:
     needs: build1
